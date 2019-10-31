@@ -14,5 +14,8 @@ rancher:
     dev: LABEL=RANCHER_STATE
     wait: true
 ssh_authorized_keys: []
+runcmd:
+  - 'sudo apt update'
+  - 'sudo apt install -y open-iscsi'
 
   
