@@ -1,0 +1,4 @@
+#cloud-config
+rancher:
+  console: ubuntu
+  
