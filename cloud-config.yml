@@ -17,6 +17,6 @@ ssh_authorized_keys: []
 runcmd:
   - "sudo apt update"
   - "sudo apt install -y open-iscsi"
-  - "sudo sed -i 's_^iscsid.startup = /bin/systemctl start iscsid.socket_#iscsid.startup = /bin/systemctl start iscsid.socket_ /etc/iscsi/iscsid.conf"
-  - "sudo sed -i 's_^# iscsid.startup = /sbin/iscsid_iscsid.startup = /sbin/iscsid_ /etc/iscsi/iscsid.conf"
+  - "sudo sed -i 's_^iscsid.startup = /bin/systemctl start iscsid.socket_#iscsid.startup = /bin/systemctl start iscsid.socket_' /etc/iscsi/iscsid.conf"
+  - "sudo sed -i 's_^# iscsid.startup = /sbin/iscsid_iscsid.startup = /sbin/iscsid_' /etc/iscsi/iscsid.conf"
   
