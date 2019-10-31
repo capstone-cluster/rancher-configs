@@ -1,4 +1,18 @@
 #cloud-config
 rancher:
   console: ubuntu
+  docker: 
+    engine: docker-19.03.4
+  environment:
+    EXTRA_CMDLINE: /init
+  services-include:
+    open-vm-tools: true
+  state:
+    autoformat:
+    - /dev/sda
+    - /dev/vda
+    dev: LABEL=RANCHER_STATE
+    wait: true
+ssh_authorized_keys: []
+
   
