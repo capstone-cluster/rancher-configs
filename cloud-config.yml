@@ -2,7 +2,7 @@
 rancher:
   console: ubuntu
   docker: 
-    engine: docker-19.03.4
+    engine: docker-19.03.8
   environment:
     EXTRA_CMDLINE: /init
   services-include:
